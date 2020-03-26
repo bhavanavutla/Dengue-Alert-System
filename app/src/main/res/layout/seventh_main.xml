@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainSixth">
+    tools:context=".MainSeventh">
 
     <TextView
         android:id="@+id/textView8"
@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="108dp"
+        android:textStyle="bold"
         android:text="Your Level of Seriousness"
         android:textColor="#000000"
         android:textSize="30dp"
@@ -25,37 +26,32 @@
         android:layout_height="95dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/textView8"
+
         android:text="You need not consult a doctor as this is not a real serious issue.We'll guide you through the medication and the hospitals near you..."
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="239dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="86dp"
-        android:layout_marginLeft="86dp"
-        android:layout_marginTop="212dp"
-        android:textColor="#8D0505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/seven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
-        android:layout_marginTop="434dp"
-        android:text="Next -> "
-        android:textColor="#FCE4EC"
+        android:layout_marginTop="54dp"
         android:background="#960909"
+        android:text="Next -> "
+        android:layout_below="@+id/textView22"
+
+        android:textColor="#FCE4EC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

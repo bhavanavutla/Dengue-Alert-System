@@ -1,14 +1,14 @@
 package com.example.pages;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class MainFifth extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Last2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fifth_main);
+        setContentView(R.layout.activity_last2);
     }
 }

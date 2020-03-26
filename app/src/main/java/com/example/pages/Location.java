@@ -1,24 +1,38 @@
 package com.example.pages;
 
-import com.google.firebase.database.FirebaseDatabase;
-
 public class Location {
     private String location;
+    private String locationcur;
+    private int cv;
 
     public Location() {
     }
 
-    public Location(String location) {
+    public Location(String location,int cv,String locationcur) {
         this.location = location;
+        this.cv=cv;
+        this.locationcur = locationcur;
     }
 
     public String getLocation() {
         return location;
     }
-
-    public void setLocation(String location) {
-        this.location = location;
+    public String getLocationCur() {
+        return locationcur;
     }
+    public int getCv(){
+        return cv;
+    }
+    public void setCv(int cv) {
+        this.cv = cv;
+    }
+    public void setLocation(String location) {
+        this.locationcur = locationcur;
+    }
+    public void setLocationCur(String location) {
+        this.locationcur = locationcur;
+    }
+
 }
 
 /*

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,49 +12,52 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="108dp"
         android:text="Your Level of Seriousness"
         android:textColor="#000000"
         android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="353dp"
-        android:layout_height="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="284dp"
-        android:text="You need to consult a doctor as this is \na serious issue.We'll guide you through \nthe medication and the hospitals near you..."
+        android:layout_marginTop="54dp"
+        android:text="Irrespective of your level, we always suggest you to consult a doctor.We will guide you through the specialists and hospitals near you..."
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/progressBar3"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="239dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="86dp"
-        android:layout_marginLeft="86dp"
-        android:layout_marginTop="212dp"
-        android:textColor="#8D0505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/sixth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="54dp"
         android:background="#960909"
+        android:layout_below="@+id/textView44"
         android:text="Next -> "
         android:textColor="#FCE4EC"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="54dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView22"
+        android:textSize="20dp"
+        android:text="" />
+
+</RelativeLayout>
